@@ -1,0 +1,16 @@
+extends ./../base
+
+block content 
+    .container 
+        .row 
+            each rocket in rockets
+                .col 
+                    .card(style="width: 18rem;")
+                        img(src=`${rocket.flickr_images[0]}` class="card-img-top"  alt="...")
+                        .card-body   
+                            h1.card-title (#{rocket.name})
+                            
+                            p.card-text want to know more about #{rocket.name}?
+                            a(href=`/rockets-details/${rocket._id}`).btn.btn-primary click here
+       
+

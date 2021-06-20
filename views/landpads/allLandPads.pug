@@ -1,0 +1,17 @@
+extends ./../base
+
+block content 
+    .container 
+        .row 
+            each landPad in landPads
+                .col 
+                    .card(style="width: 18rem;")
+                        //- img(src=`${landPad.image}` class="card-img-top"  alt="...")
+                        .card-body 
+                        
+                            h1.card-title #{landPad.fullname} (#{landPad.name})
+                            
+                            p.card-text want to know more about #{landPad.name}?
+                            a(href=`/landPads-details/${landPad._id}`).btn.btn-primary click here
+       
+

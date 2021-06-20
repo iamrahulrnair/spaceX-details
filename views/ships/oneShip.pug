@@ -1,0 +1,12 @@
+extends ./../base
+block content
+    h1 #{ship.name}
+    h2 (#{ship.legacy_id})
+    hr
+    h4 #{ship.home_port}
+    h4 mass in KG:#{ship.mass_kg}
+    hr
+    h4 type- #{ship.type}
+    hr
+    img(src=`${ship.image}`, alt="")
+    a(href=`${ship.link}`) all about #{ship.name}

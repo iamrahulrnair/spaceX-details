@@ -1,0 +1,11 @@
+extends ./../base
+block content
+    h1 #{landpad.full_name}
+    hr
+    h4 #{landpad.locality}
+    h4 #{landpad.region}
+    h4 No: landing-attempts:#{landpad.landing_attempts}
+    hr
+    h4 #{landpad.details}
+
+    a(href=`${landpad.wikipedia}`) all about #{landpad.name}

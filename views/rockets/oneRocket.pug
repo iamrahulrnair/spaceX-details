@@ -1,0 +1,13 @@
+extends ./../base
+block content
+    h1 #{rocket.name}
+    hr
+    h4 cost per launch: #{cost_per_launch} 
+    p (#{rocket.cost_per_launch})
+    h4 #{rocket.region}
+    h4 mass in KG:#{rocket.mass.kg}
+    h4 mass in LB:#{rocket.mass.lb}
+    hr
+    h4 #{rocket.description}
+    img(src=`${rocket.flickr_images[1]}`, alt="")
+    a(href=`${rocket.wikipedia}`) all about #{rocket.name}
