@@ -5,12 +5,12 @@ block content
         .row 
             each ship in ships
                 .col 
-                    .card(style="width: 18rem;")
+                    .card
                         img(src=`${ship.image}` class="card-img-top"  alt="...")
                         .card-body   
                             h1.card-title (#{ship.name})
                             
                             p.card-text want to know more about #{ship.name}?
-                            a(href=`/ships-details/${ship._id}`).btn.btn-primary click here
+                            a(href=`/ships-details/${ship._id}`).btn.btn-outline-warning click here
        
 

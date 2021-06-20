@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "compile2:sass": "node-sass public/sass/singlemain.scss public/css/style2.css -w"
   },
   "author": "iamrahulrnair",
   "license": "ISC",
@@ -17,5 +19,8 @@
     "number-to-words": "^1.2.4",
     "pug": "^3.0.2",
     "slugify": "^1.5.3"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0"
   }
 }
