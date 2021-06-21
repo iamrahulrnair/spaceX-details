@@ -26,11 +26,10 @@ const rocketsSchema = new mongoose.Schema({
   id: String,
 });
 
-rocketsSchema.pre(/^find/, async function (next) {
-  console.log(this);
-  // this.find({ active: { $ne: false } });
-  next();
-});
+// rocketsSchema.pre(/^find/, async function (next) {
+// this.find({ active: { $ne: false } });
+//   next();
+// });
 
 const Rocket = mongoose.model("Rockets", rocketsSchema);
 module.exports = Rocket;

@@ -1,15 +1,14 @@
 extends ./../base
 
 block content 
-    .container 
         .row 
             each crew in crews
                 .col 
-                    .card(style="width: 18rem;")
+                    .card
                         img(src=`${crew.image}` class="card-img-top"  alt="...")
                         .card-body 
                             h2.card-title #{crew.name}
                             p.card-text want to know more about him/her?
-                            a(href=`/crew-details/${crew.slug}`).btn.btn-primary click here
+                            a(href=`/crew-details/${crew.slug}`).btn.btn-warning click here
        
 

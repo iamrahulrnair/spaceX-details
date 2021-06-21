@@ -1,0 +1,107 @@
+$color-light-silver: #dddddddc;
+$color-light-black: #222831;
+$color-light-blue: #30475e;
+$color-light-red: #f05454;
+$color-pure-white: rgb(255, 255, 255);
+
+body {
+  background-color: $color-light-silver;
+}
+
+.big-container {
+  display: flex;
+  background-color: $color-light-blue;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+
+  &--crew {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(88, 70, 70, 0.2),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/145a4477029515.5c7bcf54cc7f2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &--lanpad {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(88, 70, 70, 0.2),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://cdn.britannica.com/s:800x450,c:crop/57/171657-138-3567DCB7/SpaceX-Video-contract-astronauts-space-NASA-spacecraft-August-2012.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &--rocket {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(88, 70, 70, 0.2),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://www.universetoday.com/wp-content/uploads/2019/08/Starship-Super-Heavy-steel-render-2019-SpaceX-2X-1-crop-2000x938.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &--ship {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(88, 70, 70, 0.2),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://www.cnet.com/a/img/hIm0NUGZEjG4S0Dy_caWwPiD3Kk=/1200x675/2019/01/30/eef0e715-6c47-4c9b-b01a-2827f0aeab02/screen-shot-2019-01-30-at-12-42-36-pm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & a {
+    font-size: 5rem;
+    text-decoration: none;
+    color: $color-light-silver;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: $color-pure-white;
+      transition: color 0.5s ease-in-out;
+    }
+  }
+}
+
+.row {
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(0, 0, 0, 0.666),
+    rgba(0, 13, 255, 0.816)
+  );
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  & .col {
+    margin-bottom: 20px;
+
+    & .card {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      color: $color-pure-white;
+      font-size: xx-large;
+      background-image: linear-gradient(
+        to left bottom,
+        rgba(0, 0, 0, 0.666),
+        rgba(0, 13, 255, 0.666)
+      );
+      & .card-img-top {
+        height: 400px;
+        width: 400px;
+        margin: 20px;
+      }
+      & .btn {
+        width: 100%;
+      }
+    }
+  }
+}

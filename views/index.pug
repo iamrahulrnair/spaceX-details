@@ -1,9 +1,14 @@
 extends ./base
 
 block content 
-    .container-fluid 
-        .big-container 
+        .big-container.big-container--crew 
             a(href="/crew-details") all about crews 
+        .big-container.big-container--lanpad  
             a(href="/landPads-details") all about landpads 
+        .big-container.big-container--rocket  
             a(href="/rockets-details") all about rockets 
-            a(href="/ships-details") all about ships 
+        .big-container.big-container--ship  
+            a(href="/ships-details") all about ships
+        
+        script(src="js/script-for-index.js")
+        
