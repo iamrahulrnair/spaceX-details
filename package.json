@@ -22,8 +22,12 @@
     "nodemailer": "^6.6.2",
     "number-to-words": "^1.2.4",
     "pug": "^3.0.2",
+<<<<<<< HEAD
     "slugify": "^1.5.3",
     "validator": "^13.6.0"
+=======
+    "slugify": "^1.5.3"
+>>>>>>> c206bf17da1964f3ad7e7fcc37792b3db7f84826
   },
   "devDependencies": {
     "node-sass": "^6.0.0"
